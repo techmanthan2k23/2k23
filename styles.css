@@ -1,0 +1,239 @@
+body{
+  background: linear-gradient(45deg, #000000, hsl(240, 53%, 16%),#652477, #30265f, #4140AE);
+  background-size: 400% 400%;
+  height: 100vh;
+  animation: gradientAnimation 10s ease infinite;
+}
+/* gradient section */
+    :root {
+      --gradient: linear-gradient(45deg, #2B2F6C,#000000, #191970, #000000);
+    }
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+/* navbar section */
+.navbar {
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 20px;
+
+}
+.nav-item{
+  text-decoration: none;
+  color: white;
+ 
+}
+div ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+.nav-logo{
+  width: 10rem;
+}
+.hero-section{
+  text-align: center;
+  margin-top: 50px;
+}
+.hero-image{
+  width: 15rem;
+}
+.event-date{
+  margin-top: 50px;
+  text-align: center;
+  background: linear-gradient(45deg, #000000, #30265f,#000000, #4140AE);
+  background-size: 800% 800%;
+  animation: gradientAnimation 10s ease infinite;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+}
+.event-date h2{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.date{
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'unbounded', sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: bolder;
+  font-size: 0.6rem;
+  color: white;
+}
+
+.scroll{
+  margin-bottom: 0px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  color: white;
+  font-style: italic;
+}
+.arrow{
+margin-left: auto;
+margin-right: auto;
+  width: 5rem;
+  animation: move-the-circle 1s infinite;
+  transform-origin: center center;
+}
+
+@for $num from 1 through 8 {
+  .circle:nth-child(#{$num}) {
+    left: ($num - 1) * 30px;
+  }
+}
+
+@keyframes move-the-circle {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 25px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+#event-icons{
+  margin: 30px;
+}
+.events h3,.desc h3{
+  font-family: 'unbounded',sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+.events p,.desc p{
+  font-family: 'unbounded',sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: white;
+}
+.eventicon-container {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.desc{
+  margin: 20px;
+}
+.desc h4{
+  font-family: 'unbounded',sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+}
+.event-cor{
+  text-transform: capitalize;
+}
+.eventicon {
+  margin: 20px 10px;
+  width: 8rem;
+  border-radius: 30px;
+}
+#downloadButton{
+  margin-top: 20px;
+  background-color: white;
+  color: #2B2F6C;
+  border-radius: 10px;
+  font-family: 'unbounded',sans-serif;
+  font-weight: bold;
+}
+.events-img{
+  width: 25%;
+  border-radius: 20px;
+  min-height: 5rem;
+}
+.standing p{
+  margin-left: 30px;
+}
+.video-div{
+  margin-top: 10%;
+  text-align: center;
+}
+.promo{
+  width: 60%;
+  border-radius: 31px;
+}
+.links-div{
+  margin-top: 30px;
+  text-align: center;
+}
+.fa-brands{
+  width: 10rem;
+  height: 50px;
+}
+.ndc-logo{
+  width:2.3rem;
+  margin-left: 50px;
+}
+@media (max-width: 360px) {
+  .eventicon {
+    flex: 0 0 calc(33.333333%-10px);
+    width: 4rem;
+    border-radius: 20%;
+    width: 5rem;
+  }
+  .events-img{
+    width: 80%;
+    border-radius: 20px;
+    min-height: 15rem;
+  }
+  .events h3,.desc h3{
+    font-family: 'unbounded',sans-serif;
+    font-size: 1rem;
+    color: white;
+  }
+  .events p,.desc p{
+    font-family: 'unbounded',sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: white;
+  }
+  .desc{
+    margin: 20px;
+  }
+  .desc h4{
+    font-family: 'unbounded',sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;
+  }
+  .standing p{
+    margin-left: 30px;
+  }
+  .video-div{
+    text-align: center;
+  }
+  .promo{
+    width: 85%;
+    border-radius: 20px;
+}
+#downloadButton{
+  margin-top: 20px;
+  background-color: white;
+  color: #2B2F6C;
+  border-radius: 10px;
+  font-family: 'unbounded',sans-serif;
+  font-weight: bold;
+}
+}
+
+
