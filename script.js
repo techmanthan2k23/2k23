@@ -28,7 +28,7 @@ document.getElementById('downloadButton').addEventListener('click', function() {
     link.href = imageUrl;
 
     // Set the download attribute with a desired filename
-    link.download = 'tech manthan 2k23.pdf';
+    link.download = 'full.pdf';
 
     // Append the link to the body
     document.body.appendChild(link);
