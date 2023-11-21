@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.getElementById('downloadButton').addEventListener('click', function() {
     // Get the image source
-    var imageUrl = "assets\brochure.pdf";
+    var imageUrl = "assets\full.pdf";
 
     // Create an anchor element"D:\tm\site\assets\brochure.pdf"
     var link = document.createElement('a');
